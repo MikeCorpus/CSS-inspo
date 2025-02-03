@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trusted Companies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS from previous responses, modified for Montserrat and responsiveness */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .trusted-companies {
+            background: linear-gradient(102.79deg, #E8F1F3 0%, #F5F9FA 100%);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .trusted-companies-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            justify-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 60px; /* Added minimum height for consistent box sizes */
+        }
+
+        @media (max-width: 768px) {
+            .companies-grid {
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 10px;
+            }
+
+            .company-logo {
+                font-size: 14px;
+                padding: 10px;
+                min-height: 50px; /* Adjusted min-height for mobile */
+            }
+
+            .trusted-companies-text {
+                font-size: 20px;
+            }
+        }
+
+        .airbnb-logo {
+            color: #FF5A5F;
+        }
+        .hertz-logo {
+            /* Add Hertz-specific styles if needed */
+        }
+        .sony-logo {
+            /* Add Sony-specific styles if needed */
+        }
+        .peta-logo {
+            /* Add PETA-specific styles if needed */
+        }
+        .ask-logo {
+            /* Add Ask-specific styles if needed */
+        }
+        .ea-logo {
+            /* Add EA-specific styles if needed */
+        }
+        .samsung-logo {
+            /* Add Samsung-specific styles if needed */
+        }
+        .microsoft-logo {
+            /* Add Microsoft-specific styles if needed */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="trusted-companies">
+        <div class="trusted-companies-text">
+            Trusted by thousands of companies around the world
+        </div>
+        <div class="companies-grid">
+            <div class="company-logo airbnb-logo">Airbnb</div>
+            <div class="company-logo hertz-logo">Hertz</div>
+            <div class="company-logo sony-logo">Sony</div>
+            <div class="company-logo peta-logo">PETA</div>
+
+            <div class="company-logo ask-logo">Ask</div>
+            <div class="company-logo ea-logo">Electronic Arts</div>
+            <div class="company-logo samsung-logo">Samsung</div>
+            <div class="company-logo microsoft-logo">Microsoft</div>
+        </div>
+    </div>
+
+</body>
+</html>
